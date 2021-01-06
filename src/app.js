@@ -3,6 +3,7 @@ const path=require("path");
 const bcrypt=require("bcrypt");
 const hbs=require("hbs");
 const app=express();
+//const connectDB=require('./db/conn');
 const port=process.env.PORT || 3000;
 
 // 7 let me knowthe express that is json file use
@@ -11,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 // 1 connection of databse through express
 require("./db/conn");
-
+//connectDB();
 // 6 reqiure to models schema
 const Register=require("./models/registers");
 

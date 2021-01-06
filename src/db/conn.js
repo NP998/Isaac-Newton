@@ -1,11 +1,26 @@
 const mongoose=require("mongoose");
+//this is for localhost mongoose compass
 //create a youtubeRegistration name database in mongoose
 //for connection express(front end) go to app.js
-mongoose.connect("mongodb://localhost:27017/youtubeRegistration",{useNewUrlParser: true,
-                                                                  useUnifiedTopology:true,
-                                                                  useCreateIndex: true
+//mongoose.connect("mongodb://localhost:27017/youtubeRegistration",{useNewUrlParser: true,
+ //                                                                 useUnifiedTopology:true,
+ //                                                                 useCreateIndex: true
+//}).then(()=>{
+// console.log("connection succesful");
+//}).catch((err)=>{
+//console.log(`error connection`);
+ //})
+ 
+
+ //now with mongoose atlus
+ const URI="mongodb+srv://dbUser:dbUser@cluster0.puzut.mongodb.net/<dbname>?retryWrites=true&w=majority"
+ mongoose.connect(URI,{useNewUrlParser: true,
+                      useUnifiedTopology:true,
+                      useCreateIndex: true
 }).then(()=>{
  console.log("connection succesful");
 }).catch((err)=>{
 console.log(`error connection`);
  })
+
+ //module.exports=connectDB;
