@@ -45,7 +45,7 @@ employeeSchema.pre("save",async function(next){
     next();//then we notification then now the save() can run
 })
 
-//now we create a collection
-//const Register=new mongoose.model("Register",employeeSchema);
+//now we create a collection .first letter must be capital and it export and import in app.js in point 6
 const Register=new mongoose.model("Register",employeeSchema);
+
 module.exports=Register;

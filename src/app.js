@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:false}));
 // 1 connection of databse through express
 require("./db/conn");
 //connectDB();
-// 6 reqiure to models schema
+// 6 reqiure to models schema 
 const Register=require("./models/registers");
 
 // 2 it is use for use the static file with expess like src->public->index.html
@@ -40,7 +40,7 @@ app.get("/register",(req,res)=>{
 // 8 create new user in our db
 app.post("/register",async(req,res)=>{
     try{
-        //jo bhi input de rahewah pane ke liye lik rahe hai
+      
        const password=req.body.password;
        const cpassword=req.body.confirmpassword;
        if(password===cpassword){
