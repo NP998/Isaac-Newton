@@ -13,7 +13,7 @@ const mongoose=require("mongoose");
  
 
  //now with mongoose atlus
- const URI="mongodb+srv://dbUser:dbUser@cluster0.puzut.mongodb.net/<dbname>?retryWrites=true&w=majority"
+ const URI="mongodb+srv://dbuser:dbuser@cluster0.jsn0q.mongodb.net/<dbname>?retryWrites=true&w=majority"
  mongoose.connect(URI,{useNewUrlParser: true,
                       useUnifiedTopology:true,
                       useCreateIndex: true
