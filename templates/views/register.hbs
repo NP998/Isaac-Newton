@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Mren</title>
+</head>
+<body>
+    {{>navbar}}
+
+<form action="/register" method="POST">
+<div class="container">
+<div class="row">
+
+<div class="col-md-6">
+  <div class="form-group">
+    <input type="text" class="form-control"   placeholder="First name *"  value="" name="firstname"/>
+  </div>
+
+  <div class="form-group">
+   <input type="email" class="form-control"   placeholder="Your email *" value="" name="email" />
+  </div>
+
+  <div class="form-group">
+   <input type="text" class="form-control" minlength="10" maxlength="10"  placeholder="Your phone  *" value="" name="phone" />
+  </div>
+
+  <div class="form-group">
+   <input type="password" class="form-control"   placeholder="Your password *" value="" name="password" />
+  </div>
+
+ </div> 
+
+ <div class="col-md-6 ">
+  <div class="form-group">
+    <input type="text" class="form-control"   placeholder="Last name *" value="" name="lastname"/>
+  </div>
+
+  
+
+  <div class="form-group">
+      <div class="maxl">
+         
+
+          <input type="radio"   value="male" name="gender" checked  ><label for="male">Male</label><br>
+          <input type="radio"   value="female" name="gender" ><label for="female">Female</label>
+         
+      </div>
+  </div>
+
+<div class="form-group">
+   <input type="text" class="form-control"   placeholder="age *" value="" name="age" />
+  </div>
+
+  <div class="form-group">
+   <input type="password" class="form-control"   placeholder="Confirm password *" value="" name="confirmpassword" />
+  </div>
+  <p>If you have <span style="color:rgb(179, 16, 16) "> Isaac Newton </span> account then you sholud go with <button><a href="./login" style="color: white;">Login</a></button> </p><br>
+  <p>By creating an account you agree to our <a href="#" style="color:rgb(165, 29, 29)" >Terms & Privacy</a>.</p>
+  <input type="submit" class="btnRegister" value="register" />
+ </div>
+ </div> 
+  
+  </div>
+</form>
+    <footer>
+        <h3 style="color: white; text-align:center ">Privacy Policy | Terms and Conditions | About Isaac Newton </h3>
+        <p>&copy 2020 Isaac Newton . All Right Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
